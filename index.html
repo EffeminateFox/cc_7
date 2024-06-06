@@ -1,0 +1,38 @@
+  //U54529624
+//Establishes framwork for website and ratings.
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Customer Feedback Form</h1>
+    <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="">Choose a rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" required></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Feedback:</h2>
+//Displays feedback
+    <div id="feedbackDisplay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
